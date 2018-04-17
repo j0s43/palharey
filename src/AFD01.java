@@ -24,12 +24,12 @@ public class AFD01 extends Frame implements ActionListener {
 	 mPainel3 = new Panel();
 	 mPainel4 = new Panel();
 	 mPainel5 = new Panel();
-	 mLbFita = new Label("Digite abaixo a sentenÁa desejada");
+	 mLbFita = new Label("Digite abaixo a senten√ßa desejada");
 	 mFita = new TextField(50);
 	 mBtExecutar = new Button("Executar");
-	 mtxtExecucao = new TextArea("ExecuÁ„o");
+	 mtxtExecucao = new TextArea("Execu√ß√£o");
 	 mBtFim = new Button("Fim");
-	//------> DisposiÁ„o dos painÈis...
+	//------> Disposi√ß√£o dos pain√©is...
 	 mPainel1.setLocation(0,0);
 	 mPainel1.setBackground(new Color(255,128,128));
 	 mPainel1.setSize(mLargura,50);
@@ -84,202 +84,172 @@ public class AFD01 extends Frame implements ActionListener {
 	 for (iCursor = 0; iCursor < vTamanhoFita; iCursor++) {
 	 vPrimitivaLida = mFita.getText().substring(iCursor,iCursor+1);
 	 if ( (vPrimitivaLida.equalsIgnoreCase(" ")) && (Q.equalsIgnoreCase("q0")) ) {
-		 mtxtExecucao.append(Q + " x " + "espaÁo em branco >>> ");
-		 Q = "q0"; // estado È o mesmo...
+		 mtxtExecucao.append(Q + " x " + "espa√ßo em branco >>> ");
+		 Q = "q0"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q0")) ) {
 		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q1"; // estado È o mesmo...
+		 Q = "q1"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q1")) ) {
 		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q2"; // estado È o mesmo...
+		 Q = "q2"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q2")) ) {
 		 mtxtExecucao.append(Q + " x " + "d >>> ");
-		 Q = "q3"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q3")) ) {
-		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q3"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q3")) ) {
-		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q3"; // estado È o mesmo...
+		 Q = "q3"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q3")) ) {
 		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q3"; // estado È o mesmo...
+		 Q = "q3"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q3")) ) {
 		 mtxtExecucao.append(Q + " x " + "d >>> ");
-		 Q = "q3"; // estado È o mesmo...
+		 Q = "q3"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q0")) ) {
 		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q4"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q4")) ) {
-		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q5"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q5")) ) {
-		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q6"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q6")) ) {
-		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q6"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q6")) ) {
-		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q6"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q6")) ) {
-		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q6"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q6")) ) {
-		 mtxtExecucao.append(Q + " x " + "d >>> ");
-		 Q = "q6"; // estado È o mesmo...
+		 Q = "q4"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q3")) ) {
 		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q7"; // estado È o mesmo...
+		 Q = "q4"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q4")) ) {
+		 mtxtExecucao.append(Q + " x " + "b >>> ");
+		 Q = "q4"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q4")) ) {
+		 mtxtExecucao.append(Q + " x " + "d >>> ");
+		 Q = "q4"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q4")) ) {
+		 mtxtExecucao.append(Q + " x " + "c >>> ");
+		 Q = "q5"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q5")) ) {
+		 mtxtExecucao.append(Q + " x " + "b >>> ");
+		 Q = "q6"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q6")) ) {
+		 mtxtExecucao.append(Q + " x " + "d >>> ");
+		 Q = "q6"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q6")) ) {
+		 mtxtExecucao.append(Q + " x " + "a >>> ");
+		 Q = "q6"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q6")) ) {
+		 mtxtExecucao.append(Q + " x " + "d >>> ");
+		 Q = "q6"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q6")) ) {
 		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q7"; // estado È o mesmo...
+		 Q = "q4"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q7")) ) {
-		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q8"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q8")) ) {
-		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q9"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q9")) ) {
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q4")) ) {
 		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q10"; // estado È o mesmo...
+		 Q = "q7"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q10")) ) {
-		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q10"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q10")) ) {
-		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q10"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q10")) ) {
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q6")) ) {
 		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q10"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q10")) ) {
-		 mtxtExecucao.append(Q + " x " + "d >>> ");
-		 Q = "q10"; // estado È o mesmo...
+		 Q = "q7"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q7")) ) {
 		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q10"; // estado È o mesmo...
+		 Q = "q7"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q10")) ) {
-		 mtxtExecucao.append(Q + " x " + "d >>> ");
-		 Q = "q11"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q11")) ) {
-		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q12"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q12")) ) {
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q7")) ) {
 		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q12"; // estado È o mesmo...
+		 Q = "q7"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q12")) ) {
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q7")) ) {
+		 mtxtExecucao.append(Q + " x " + "d >>> ");
+		 Q = "q3"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q7")) ) {
 		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q12"; // estado È o mesmo...
+		 Q = "q8"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q12")) ) {
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q8")) ) {
+		 mtxtExecucao.append(Q + " x " + "b >>> ");
+		 Q = "q8"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q8")) ) {
 		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q12"; // estado È o mesmo...
+		 Q = "q7"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q12")) ) {
-		 mtxtExecucao.append(Q + " x " + "d >>> ");
-		 Q = "q12"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q12")) ) {
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q8")) ) {
 		 mtxtExecucao.append(Q + " x " + "a >>> ");
-		 Q = "q13"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q12")) ) {
-		 mtxtExecucao.append(Q + " x " + "d >>> ");
-		 Q = "q11"; // estado È o mesmo...
-		 mtxtExecucao.append(Q + vEnter);
-	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q12")) ) {
-		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q14"; // estado È o mesmo...
+		 Q = "q10"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q10")) ) {
+		 mtxtExecucao.append(Q + " x " + "a >>> ");
+		 Q = "q3"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q9")) ) {
+		 mtxtExecucao.append(Q + " x " + "a >>> ");
+		 Q = "q7"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q9")) ) {
 		 mtxtExecucao.append(Q + " x " + "b >>> ");
-		 Q = "q14"; // estado È o mesmo...
+		 Q = "q7"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q14")) ) {
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q9")) ) {
 		 mtxtExecucao.append(Q + " x " + "c >>> ");
-		 Q = "q15"; // estado È o mesmo...
+		 Q = "q7"; // estado √© o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
-	 else if ( (vPrimitivaLida.equalsIgnoreCase("b")) && (Q.equalsIgnoreCase("q15")) ) {
-			 mtxtExecucao.append(Q + " x " + "b >>> ");
-			 Q = "q16"; // estado È o mesmo...
-			 mtxtExecucao.append(Q + vEnter);
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q9")) ) {
+		 mtxtExecucao.append(Q + " x " + "d >>> ");
+		 Q = "q7"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q3")) ) {
+		 mtxtExecucao.append(Q + " x " + "a >>> ");
+		 Q = "q9"; // estado √© o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
 	 }
 	 else{
 		 break;
 	 }
 	//======>>> ALUNO !!!! CODIFICAR AQUI O RESTANTE DO AFD !!!!!
 	 }
-	//---> SentenÁa foi aceita ?
+	//---> Senten√ßa foi aceita ?
 	 mtxtExecucao.append(vEnter + "-----------------------------------" + vEnter);
 	 if (Q.equalsIgnoreCase("q16") || Q.equalsIgnoreCase("q13")) {
-	 mtxtExecucao.append("SentenÁa ACEITA !!!" + vEnter);
+	 mtxtExecucao.append("Senten√ßa ACEITA !!!" + vEnter);
 	 }
 	 else {
-	 mtxtExecucao.append("SentenÁa REJEITADA !!!" + vEnter);
+	 mtxtExecucao.append("Senten√ßa REJEITADA !!!" + vEnter);
 	 }
 	 mtxtExecucao.append("-----------------------------------" + vEnter);
 	 mtxtExecucao.append(vEnter + "*** FIM ***" + vEnter);
