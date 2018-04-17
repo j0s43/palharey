@@ -238,6 +238,31 @@ public class AFD01 extends Frame implements ActionListener {
 		 Q = "q9"; // estado é o mesmo...
 		 mtxtExecucao.append(Q + vEnter);
 	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("a")) && (Q.equalsIgnoreCase("q5")) ) {
+		 mtxtExecucao.append(Q + " x " + "a >>> ");
+		 Q = "q5"; // estado é o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q5")) ) {
+		 mtxtExecucao.append(Q + " x " + "d >>> ");
+		 Q = "q5"; // estado é o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q5")) ) {
+		 mtxtExecucao.append(Q + " x " + "c >>> ");
+		 Q = "q5"; // estado é o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("d")) && (Q.equalsIgnoreCase("q8")) ) {
+		 mtxtExecucao.append(Q + " x " + "d >>> ");
+		 Q = "q8"; // estado é o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
+	 else if ( (vPrimitivaLida.equalsIgnoreCase("c")) && (Q.equalsIgnoreCase("q10")) ) {
+		 mtxtExecucao.append(Q + " x " + "c >>> ");
+		 Q = "q3"; // estado é o mesmo...
+		 mtxtExecucao.append(Q + vEnter);
+	 }
 	 else{
 		 break;
 	 }
